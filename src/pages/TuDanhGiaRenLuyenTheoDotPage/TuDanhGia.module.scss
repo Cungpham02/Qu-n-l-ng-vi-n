@@ -1,0 +1,44 @@
+.wapper{
+    padding: 2%;
+}
+.form_control{
+    outline: none;
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    caret-color: aquamarine;
+}
+.css_icon{
+    background-color: #08df01eb;
+    color: #fff;
+    border-radius: 3px !important;
+    border: none;
+}
+.title_danhgia{
+    display: inline-block;
+    font-size: 18px;
+    line-height: 18px;
+    padding: 10px 0;
+    position: relative;
+    
+}
+.tong_diem{
+    font-size: 18px;
+    font-weight: bold;
+}
+.save_button{
+    background-color: #1da1f2;
+    color: #fff;
+    border-radius: 3px !important;
+    padding: 4px 10px;
+    font-size: 13px;
+    line-height: 1.5;
+}
+.span{font-weight: 700}

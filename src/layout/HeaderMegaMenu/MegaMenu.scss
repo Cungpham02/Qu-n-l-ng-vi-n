@@ -1,0 +1,117 @@
+.mega_menu > ul{
+    display: flex;
+    list-style: none;
+    margin: 0 auto;
+    list-style: none;
+}
+.mega_menu ul .has-submenu .submenu_container{
+    position: relative;
+}
+.mega_menu ul .has-submenu .submenu_container .submenu{
+    position: absolute;
+    width: 300px;
+    display: none;
+    opacity: 0;
+}
+.mega_menu ul .has-submenu:hover .submenu_container .submenu{
+    opacity: 1;
+    display: block;
+    z-index: 1;
+}
+.submenu_container{
+    width: 100%;
+}
+.mega_menu ul li:hover a{
+    color: red;
+    text-decoration: none;
+}
+.mega_menu .menu_title {
+    grid-gap: 5px;
+    align-items: center;
+    display: flex;
+    padding: 8px 16px;
+    font-weight: bold;
+    position: relative;
+}
+.mega_menu .menu_title::after{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-radius: 5px;
+    background-color: #90ee90ba;
+    transition: all 200ms ease;
+}
+.mega_menu ul li:hover > .menu_title::after{
+    width: 100%;
+    height: 2px;
+}
+li.has-submenu {
+    padding:  16px;
+}
+.mega_menu {
+    left: 0;
+    right: 0;
+    box-shadow: 0 4px 30px -7px rgba(0, 0, 0, 0.1);
+}
+
+.mega_menu_container ul .has-submenu:hover .submenu_container{
+    opacity: 1;
+    pointer-events: auto;
+}
+.mega_menu .submenu_container,.mega_menu .submenu_container .submenu,.mega_menu .submenu_container .submenu .chia-3{
+    width: 100%;
+}
+.mega_menu .submenu_item{
+    margin: 8px 0;
+}
+.mega_menu .submenu_container .submenu img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.submenu{
+    background: #fff;
+    padding: 16px 24px;
+    margin-top: 10px;
+    box-shadow: 0 4px 50px -7px rgba(0, 0, 0, 0.2);
+}
+
+.mega_menu h3 {
+    font-size: 17px;
+    margin: 8px 0;
+    font-weight: bold;
+    padding-left: 12px;
+    position:  relative;
+}
+.mega_menu h3::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    bottom: -12px;
+    left: 12px;
+    height: 2px;
+    background: #5447472d;
+}
+// @media not all and (min-width: 768px) { 
+//     .mega_menu > ul{
+//         display: block;
+//         list-style: none;
+//         margin: 0 auto;
+//         list-style: none;
+//     }
+//     .mega_menu ul .has-submenu .submenu_container .submenu {
+//         position: absolute;
+//         top: -10px;
+//         left: -250px;
+//         width: 300px;
+//         display: none;
+//         opacity: 0;
+//     }
+//     .mega_menu .menu_title::after {
+//         display: none;
+       
+//     }
+//  }

@@ -1,0 +1,230 @@
+
+
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+/*Fun begins*/
+.tab_container {
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 70px;
+	position: relative;
+}
+
+.clear, section {
+  clear: both;
+  padding-top: 10px;
+  display: none;
+}
+
+.labelCD {
+  font-weight: 700;
+  font-size: 18px;
+  display: block;
+  float: left;
+  padding: 0.5em;
+  color: #757575;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  background: #f0f0f0;
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2
+ {
+  display: block;
+  padding: 20px;
+  background: #fff;
+  color: #999;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.tab_container .tab-content p,
+.tab_container .tab-content h3 {
+  -webkit-animation: fadeInScale 0.7s ease-in-out;
+  -moz-animation: fadeInScale 0.7s ease-in-out;
+  animation: fadeInScale 0.7s ease-in-out;
+}
+.tab_container .tab-content h3  {
+  text-align: center;
+}
+
+.tab_container [id^="tab"]:checked + label {
+  background: #fff;
+  box-shadow: inset 0 3px #0CE;
+}
+
+.tab_container [id^="tab"]:checked + label .fa {
+  color: #0CE;
+}
+
+label .fa {
+  font-size: 1.3em;
+  margin: 0 0.4em 0 0;
+}
+
+
+/*Media query*/
+@media only screen and (max-width: 900px) {
+  label span {
+    display: none;
+  }
+  
+  .tab_container {
+    width: 98%;
+  }
+}
+
+/*Content Animation*/
+@keyframes fadeInScale {
+  0% {
+  	transform: scale(0.9);
+  	opacity: 0;
+  }
+  
+  100% {
+  	transform: scale(1);
+  	opacity: 1;
+  }
+}
+
+.no_wrap {
+  text-align:center;
+  color: #0ce;
+}
+.link {
+  text-align:center;
+}
+.emty_tr{
+  text-align: center;
+}
+.color{
+  color: rgb(30, 217, 92);
+}
+.form_edit_password{
+  padding: 3rem;
+}
+.password_moi,.password,.password_moi_check {
+  margin: 5px 0;
+  border-radius: 4px;
+  color: #161515;
+  padding: 4px 10px;
+  background: #fff;
+  border: 1px solid #9998ac;
+}
+select#ward {
+  margin: 5px 0;
+  border-radius: 4px;
+  color: #161515;
+  padding: 4px 10px;
+  background: #fff;
+  border: 1px solid #9998ac;
+  /* border: 1px solid; */
+}
+select.ward{margin: 5px 0;
+  border-radius: 4px;
+  color: #161515;
+  padding: 4px 10px;
+  background: #fff;
+  border: 1px solid #9998ac;
+
+}
+.btn_update_pass {
+  padding: 6px 12px;
+  border-radius: 3px;
+  background: rgb(0, 255, 123);
+  margin: 5px 5px 0 0;
+  color: black;
+  font-weight: 600;
+}
+.btn_close{
+  padding: 6px 12px;
+  border-radius: 3px;
+  background: rgb(53, 111, 81);
+  margin: 5px 5px 0 0;
+}
+.bg_color{
+  // background: rgba(0,0,0,0.19);
+  
+}
+.mx_top{
+  border-radius: 4px;
+  animation: slideDown 0.5s ease forwards;
+  opacity: 0; /* Khởi đầu ẩn đi */
+  margin-top: 20px;
+  box-shadow: 0px 1px 1px 2px rgba(0,0,0,0.09);
+  background: #fff;
+}
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.tableList {
+  overflow: auto;
+  width: 100%; /* Cho phép cuộn nếu nội dung vượt ra ngoài */
+  height: 200px; /* Chiều cao của phần tử */
+  position: relative; /* Vị trí tương đối để các phần tử con có thể sử dụng position absolute */
+}
+
+.tableList > div {
+  // height: 100%; /* Sử dụng chiều cao tối đa của phần tử cha */
+  background-color: #fff; /* Màu nền cho phần tử con */
+}
+
+/* Thiết lập thanh cuộn */
+.tableList::-webkit-scrollbar {
+  width: 8px; /* Độ rộng của thanh trượt */
+}
+
+/* Màu sắc của thanh trượt */
+.tableList::-webkit-scrollbar-thumb {
+  background-color: #3ca960;
+  border-radius: 6px;
+}
+
+/* Thiết lập khi hover lên thanh trượt */
+.tableList::-webkit-scrollbar-thumb:hover {
+  background-color: #aaa;
+}
+.disabled{
+  background: #ccc;
+  opacity: 0.5;
+  cursor:none ;
+}
+.tieude{
+  cursor: pointer;
+}
+.form_control{
+  outline: none;
+  display: block;
+  width: 50%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  caret-color: aquamarine;
+}
+.add,.output{
+  padding: 4px 12px;
+  border:1px solid rgb(97, 204, 40);
+  color: green;
+}

@@ -1,0 +1,73 @@
+@import "normalize.css";
+@import 'tippy.js/dist/tippy.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --primary: #fe2c55;
+    --black: #000;
+    --text-color: #333;
+    --lable:#292D32;
+    --input:#E7ECF3;
+    --white:#fff;
+    --default-layout-width:1150px;
+    --default-layout-header-height: 60px;
+    --search-border-radius: 92px;
+    --search-height: 46px;
+    --search-top-spacer: 9px;
+    --search-button-width: 52px;
+    --default-layout-horizontal-spacer: 24px;
+}
+html{
+    font-size: 63.5%;
+
+}
+body{
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.65rem;
+    line-height: 1.5;
+    text-rendering: optimizespeed;
+}
+body {
+    .tippy-box {
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        background-color: rgba(84, 84, 84, 0.92);
+    }
+
+    .tippy-arrow {
+        color: rgba(84, 84, 84, 0.92);
+    }
+
+    .tippy-content {
+        padding: 8px 9px;
+    }
+
+    .tippy-box[data-placement^='bottom'] > .tippy-arrow:before {
+        top: -8px;
+    }
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+input{
+    color: red;
+    width: 100%;
+    outline: none;
+    background: transparent;
+}
+.content_container{
+    width: 98%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+a{
+    display: block !important;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

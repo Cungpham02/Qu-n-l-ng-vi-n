@@ -1,0 +1,198 @@
+.button_group{
+    margin: 24px 0;
+}
+.content_container {
+    width: 1100px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+.button_group .btn_group{
+    padding: 6px 50px;
+    border-radius: 4px;
+    display: inline-block;
+    background: #337ab7;
+    text-align: center;
+}
+ .btn_group .btn_search,i.fa-solid.fa-magnifying-glass,i.fa-solid.fa-floppy-disk{
+    font-size: 12px;
+    color: #fff;
+    font-weight: 700;
+}
+.btn_group.btn_save {
+    background: #12be2c;
+}
+
+
+
+table {
+    width: 100%; 
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.fixed-header {
+    position: sticky;
+    left: 0;
+    // background-color: #f2f2f2;
+}
+
+.fixed-data {
+    background: #ccc;
+    position: sticky;
+    left: 0;
+    // background-color: #ffffff; /* Đặt màu nền của cột dữ liệu để che phủ cột tiêu đề */
+}
+.content_container .wapper{
+    position: relative;
+}
+.content_container .wapper .title_table{
+    margin: 10px 0;
+}
+.content_container .wapper .title_table .text_table{
+    font-size: 15px;
+    color: #1e0e0efb;
+    font-weight: 500;
+}
+.content_container .wapper  .panition{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    
+}
+.content_container .wapper  .panition span{
+    font-size: 13px;
+    color: #555;
+    font-weight: 700;
+    cursor: pointer;
+    margin: 0 2px;
+    padding: 4px 12px;
+}
+.content_container .wapper  .panition span.active{
+    background-color: #337ab7;
+    color: #fff;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+/* modal_đảng_viên */
+.body {
+    min-height: 100%;
+    height: 100%;
+    background-image: url(http://theartmad.com/wp-content/uploads/Dark-Grey-Texture-Wallpaper-5.jpg);
+    background-size: cover;
+    background-position: top center;
+    font-family: helvetica neue, helvetica, arial, sans-serif;
+    font-weight: 200;
+}
+.body.modal_active{
+    overflow: hidden;
+}
+.modal_container {
+    position: fixed;
+    display: table;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    z-index: 1;
+}
+.modal_container.show {
+    transform: scaleY(.01) scaleX(0);
+    animation: unfoldIn 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+  }
+.modal_container .modal-background {
+    display: table-cell;
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    vertical-align: middle;
+}
+.modal_container.show .modal-background .modal {
+    transform: scale(0);
+    animation: zoomIn 0.25s 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+.modal_container .modal-background .modal {
+    background: white;
+    padding: 50px;
+    display: inline-block;
+    border-radius: 3px;
+    width: 90%;
+    height: 80%;
+    font-weight: 300;
+    position: relative;
+}
+.modal_container .modal-background .modal .modal-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 3px;
+}
+.modal_container .modal-background .modal h2 {
+    font-size: 25px;
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+.modal_container .modal-background .modal p {
+    font-size: 18px;
+    line-height: 22px;
+}
+.modal_container.show.out {
+    transform: scale(1);
+    animation: unfoldOut 1s .3s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+  }
+.modal_container .modal-background .modal .icon_close_modal_DV{
+    position: absolute;
+    right: 0;
+    top: -0px;
+    padding: 4px 12px;
+    cursor: pointer;
+}
+.modal_container .modal-background .modal .icon_close_modal_DV i.fa-regular.fa-circle-xmark {
+    color: #2dc23e;
+    font-size: 25px;
+}
+.modal_container.show.out .modal-background .modal {
+    animation: zoomOut .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+  }
+@keyframes unfoldIn {
+  from {
+    transform: scaleY(0.01) scaleX(0);
+  }
+  to {
+    transform: scaleY(1) scaleX(1);
+  }
+}
+
+@keyframes unfoldOut {
+  from {
+    transform: scaleY(1) scaleX(1);
+  }
+  to {
+    transform: scaleY(0.01) scaleX(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes zoomOut {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
+
+

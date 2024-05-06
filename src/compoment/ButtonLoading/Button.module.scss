@@ -1,0 +1,39 @@
+.button{
+    border: 0;
+    outline: 0;
+    background-color: #fffffffc;
+    color: #140e0e;
+    padding: 8px 16px;
+    margin: 10px 0;
+    width: 100px;
+    font-weight: 500;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition:all 0.2s ease-in-out;
+    &:hover{
+        background-color: #2b92f7;
+    }
+    .spiner{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 0;
+        overflow: hidden;
+        transition: 0.3s ease-in-out;
+        opacity: 0;
+        visibility: hidden;
+        &.active{
+            width: 19px;
+            margin-right: 10px;
+            opacity: 1;
+            visibility: visible;
+            animation: all 0.9s ease-in;
+            color: rgba(22, 24, 35, 0.34);
+            top: 50%;
+        }
+    }
+    
+}

@@ -1,0 +1,27 @@
+.search_input{
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+    padding: 2px;
+    margin: 5px;
+    .search_text{
+        padding: 4px 8px;
+        border-radius: 5px;
+        border: 1px solid salmon;
+    }
+}
+.add,.output{
+    padding: 4px 12px;
+    border:1px solid rgb(97, 204, 40);
+    color: green;
+}
+.icon_search{
+    border:1px solid rgb(97, 204, 40);
+    padding: 4px 8px;
+}
+.css_icon{
+    background-color: #08df01eb;
+    color: #fff;
+    border-radius: 3px !important;
+    border: none;
+}

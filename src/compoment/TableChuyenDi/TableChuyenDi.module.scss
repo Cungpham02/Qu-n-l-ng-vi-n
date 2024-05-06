@@ -1,0 +1,45 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  thead {
+    background-color: #f2f2f2;
+  }
+  
+  th, td {
+    color: black;
+    font-weight: 600;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  tr{
+    text-align: center;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #fbefef1f;
+  }
+  
+  tr:hover {
+    background-color: #ddd;
+  }
+  
+  th {
+    text-align: center;
+    background-color: #d46b0f;
+    color: white;
+  }
+.btn_xacnhan{
+  color: #f9f9f9;
+    font-size: 12px;
+    padding: 2px 4px;
+    background: #0ab90a;
+}
+.icon_check{
+  width: 100%;
+  color: #0ab90a;
+}
